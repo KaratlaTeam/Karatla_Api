@@ -54,7 +54,3 @@ pub struct NewAccount{
     
     pub my_register_time: String,
 }
-
-
-
-

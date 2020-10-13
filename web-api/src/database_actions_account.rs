@@ -6,6 +6,7 @@ use crate::models_http;
 use crate::models_account;
 use crate::schema;
 
+
 pub fn get_data_all_accounts (
     connection: &MysqlConnection,
 ) -> Result<Option<Vec<models_account::Accounts>>, diesel::result::Error> {
