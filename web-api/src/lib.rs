@@ -14,3 +14,4 @@ pub mod database_actions;
 pub mod web_rount;
 pub mod schema;
 pub mod type_file;
+pub mod ssl_config;
