@@ -5,7 +5,7 @@ use crate::type_file;
 use actix_web::{client::Client, get, post, web, Error, HttpResponse};
 use rand::prelude::*;
 use serde_json;
-use tokio;
+use tokio::{time, runtime};
 
 // get code
 #[get("/api/account/validation/code/{phone}")]
@@ -74,7 +74,12 @@ pub async fn account_validation_code(
         );
 
         // delete code after 60s
-        tokio::time::sleep(tokio::time::Duration::from_secs(60)).await;
+
+        let rt = runtime::Runtime::new().unwrap();
+        rt.block_on(async {
+            time::sleep(time::Duration::from_secs(60)).await;
+        });
+
         let phone2 = phone_n.clone().to_string();
         let delete_n = web::block(move || {
             database_actions_vallidation::delete_data_validation(&connection2, &phone2)
