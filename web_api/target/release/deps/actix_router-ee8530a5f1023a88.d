@@ -1,0 +1,12 @@
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/actix_router-ee8530a5f1023a88.rmeta: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/de.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/path.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/resource.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/router.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/url.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/libactix_router-ee8530a5f1023a88.rlib: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/de.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/path.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/resource.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/router.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/url.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/actix_router-ee8530a5f1023a88.d: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/de.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/path.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/resource.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/router.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/url.rs
+
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/lib.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/de.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/path.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/resource.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/router.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-router-0.2.5/src/url.rs:

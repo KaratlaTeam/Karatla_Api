@@ -1,0 +1,1 @@
+{"rustc":17941782008528629481,"features":"[]","target":14274034942943791252,"profile":4339006351771724982,"path":8567358826141619438,"deps":[[8724049063092480171,"num_cpus",false,11035133983518918925]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/threadpool-7f933b1caf6321e6/dep-lib-threadpool"}}],"rustflags":[],"metadata":8518511065832182211,"config":0}

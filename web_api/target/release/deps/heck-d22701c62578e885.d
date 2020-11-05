@@ -1,0 +1,13 @@
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/heck-d22701c62578e885.rmeta: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/camel.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/kebab.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/mixed.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/shouty_snake.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/snake.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/title.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/libheck-d22701c62578e885.rlib: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/camel.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/kebab.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/mixed.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/shouty_snake.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/snake.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/title.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/heck-d22701c62578e885.d: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/camel.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/kebab.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/mixed.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/shouty_snake.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/snake.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/title.rs
+
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/lib.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/camel.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/kebab.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/mixed.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/shouty_snake.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/snake.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/heck-0.3.1/src/title.rs:

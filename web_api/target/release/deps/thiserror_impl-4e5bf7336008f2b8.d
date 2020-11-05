@@ -1,0 +1,11 @@
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/libthiserror_impl-4e5bf7336008f2b8.dylib: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/ast.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/attr.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/expand.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/fmt.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/prop.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/valid.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/release/deps/thiserror_impl-4e5bf7336008f2b8.d: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/ast.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/attr.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/expand.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/fmt.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/prop.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/valid.rs
+
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/lib.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/ast.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/attr.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/expand.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/fmt.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/prop.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/thiserror-impl-1.0.22/src/valid.rs:

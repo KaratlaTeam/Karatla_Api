@@ -1,0 +1,14 @@
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/debug/deps/base64-718ec6352f2254b4.rmeta: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/chunked_encoder.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/display.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/read/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/read/decoder.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/tables.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/write/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/write/encoder.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/encode.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/decode.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/debug/deps/base64-718ec6352f2254b4.d: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/chunked_encoder.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/display.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/read/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/read/decoder.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/tables.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/write/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/write/encoder.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/encode.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/decode.rs
+
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/lib.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/chunked_encoder.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/display.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/read/mod.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/read/decoder.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/tables.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/write/mod.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/write/encoder.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/encode.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.12.3/src/decode.rs:

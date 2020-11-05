@@ -1,0 +1,10 @@
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/debug/deps/futures_channel-84105fd1b8598398.rmeta: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/lock.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/queue.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/sink_impl.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/oneshot.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/debug/deps/futures_channel-84105fd1b8598398.d: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/lock.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/queue.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/sink_impl.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/oneshot.rs
+
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/lib.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/lock.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/mod.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/queue.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/mpsc/sink_impl.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.7/src/oneshot.rs:

@@ -1,0 +1,11 @@
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/debug/deps/futures_core-43509fe5ca8fd8a8.rmeta: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/future.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/stream.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/poll.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/__internal/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/__internal/atomic_waker.rs
+
+/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/debug/deps/futures_core-43509fe5ca8fd8a8.d: /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/lib.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/future.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/stream.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/poll.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/__internal/mod.rs /Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/__internal/atomic_waker.rs
+
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/lib.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/future.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/stream.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/mod.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/poll.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/__internal/mod.rs:
+/Users/july/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.7/src/task/__internal/atomic_waker.rs:
