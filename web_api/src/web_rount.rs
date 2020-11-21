@@ -5,7 +5,7 @@ use crate::type_file;
 use actix_web::{client::Client, get, post, web, Error, HttpResponse};
 use rand::prelude::*;
 use serde_json;
-use tokio::{time, runtime};
+use tokio::{runtime, time};
 
 // get code
 #[get("/api/account/validation/code/{phone}")]

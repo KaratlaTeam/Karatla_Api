@@ -1,5 +1,5 @@
-use actix_web::{HttpServer, App, };
-use web_api::{database_actions, web_rount, ssl_config};
+use actix_web::{HttpServer, App, web};
+use web_api::{database_actions, web_rount, ssl_config, };
 //use actix_files::Files;
 
 #[actix_rt::main]
@@ -23,8 +23,9 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .data(pool.clone())
             //.service(Files::new("/static", "static"))
-            .service(web_rount::account_create)
+            //.service(web::scope("/api").configure(f))
             .service(web_rount::account_get_all)
+            .service(web_rount::account_create)
             .service(web_rount::account_get)
             .service(web_rount::account_update)
             .service(web_rount::account_login_check)
