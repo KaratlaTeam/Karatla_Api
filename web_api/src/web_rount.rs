@@ -2,10 +2,77 @@ use crate::database_actions_account;
 use crate::database_actions_vallidation;
 use crate::models_http;
 use crate::type_file;
-use actix_web::{client::Client, get, post, web, Error, HttpResponse};
+use actix_web::{client::Client, get, post, web, Error, HttpResponse, HttpRequest};
+use actix_files;
+use std::path::PathBuf;
+use actix_files::NamedFile;
 use rand::prelude::*;
 use serde_json;
 use tokio::{runtime, time};
+
+
+//get question data
+#[get("/api/json/{my_type}/get/{language_code}")]
+pub async fn json_get(
+    request: HttpRequest,
+) -> Result<actix_files::NamedFile, Error> {
+    let my_type= request.match_info().get("my_type").unwrap();
+    let language_code= request.match_info().get("language_code").unwrap();
+
+    println!("my_type: {}, language code {}",my_type, language_code);
+
+     let path = format!("static/assets/json/{}_{}.html",my_type, language_code);
+     let path_buf: PathBuf = path.parse().unwrap();
+     let named_file = NamedFile::open(path_buf).map_err(|e|{
+         eprintln!("{}",e);
+         HttpResponse::InternalServerError().finish();
+     }).unwrap();
+    
+    Ok(named_file)
+    
+}
+
+//get question image data
+#[get("/api/images/question/{part}/get/{image_name:.*}")]
+pub async fn question_images_get(
+    request: HttpRequest,
+) -> Result<actix_files::NamedFile, Error> {
+    let part= request.match_info().get("part").unwrap();
+    let image_name= request.match_info().get("image_name").unwrap();
+
+    println!("part: {}, image_name: {}",part, image_name);
+
+     let path = format!("static/assets/images/question/{}/{}",part, image_name);
+     let path_buf: PathBuf = path.parse().unwrap();
+     let named_file = NamedFile::open(path_buf).map_err(|e|{
+         eprintln!("{}",e);
+         HttpResponse::InternalServerError().finish();
+     }).unwrap();
+    
+    Ok(named_file)
+    
+}
+
+//get academy image data
+#[get("/api/images/academy/get/{image_name:.*}")]
+pub async fn academy_images_get(
+    request: HttpRequest,
+) -> Result<actix_files::NamedFile, Error> {
+    let image_name= request.match_info().get("image_name").unwrap();
+
+    println!("image_name: {}",image_name);
+
+     let path = format!("static/assets/images/academy/{}",image_name);
+     let path_buf: PathBuf = path.parse().unwrap();
+     let named_file = NamedFile::open(path_buf).map_err(|e|{
+         eprintln!("{}",e);
+         HttpResponse::InternalServerError().finish();
+     }).unwrap();
+    
+    Ok(named_file)
+    
+}
+
 
 // get code
 #[get("/api/account/validation/code/{phone}")]
