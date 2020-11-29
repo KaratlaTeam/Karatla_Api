@@ -33,7 +33,7 @@ pub async fn json_get(
 }
 
 //get question image data
-#[get("/api/images/question/{part}/get/{image_name:.*}")]
+#[get("/api/images/question/{part}/{image_name:.*}")]
 pub async fn question_images_get(
     request: HttpRequest,
 ) -> Result<actix_files::NamedFile, Error> {
@@ -54,7 +54,7 @@ pub async fn question_images_get(
 }
 
 //get academy image data
-#[get("/api/images/academy/get/{image_name:.*}")]
+#[get("/api/images/academy/{image_name:.*}")]
 pub async fn academy_images_get(
     request: HttpRequest,
 ) -> Result<actix_files::NamedFile, Error> {
