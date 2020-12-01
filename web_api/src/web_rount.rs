@@ -9,14 +9,20 @@ use actix_files::NamedFile;
 use rand::prelude::*;
 use serde_json;
 use tokio::{runtime, time};
+use std::fs::File;
+use std::io::Read;
 
 
 //check question version
 #[get("/api/question/version")]
 pub async fn check_question_version(
 ) -> Result<HttpResponse, Error> {
-    //TODO get saved version of question
-    let version = serde_json::json!(1.0);
+    let mut buff = String::new();
+    let mut file = File::open("static/assets/json/version.q").unwrap();
+    file.read_to_string(&mut buff).unwrap();
+    let number: f64 = buff.parse().unwrap();
+
+    let version = serde_json::json!(number);
     let mut map_data = serde_json::Map::new();
     map_data.insert("version".to_string(), version);
     
