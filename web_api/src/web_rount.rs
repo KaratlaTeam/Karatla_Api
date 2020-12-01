@@ -11,8 +11,26 @@ use serde_json;
 use tokio::{runtime, time};
 
 
+//check question version
+#[get("/api/question/version")]
+pub async fn check_question_version(
+) -> Result<HttpResponse, Error> {
+    //TODO get saved version of question
+    let version = serde_json::json!(1.0);
+    let mut map_data = serde_json::Map::new();
+    map_data.insert("version".to_string(), version);
+    
+    let back_data = models_http::JsonData {
+        code: 200,
+        data: map_data,
+    };
+    Ok(HttpResponse::Ok().json(back_data))
+    
+}
+
+
 //get question data
-#[get("/api/json/{my_type}/get/{language_code}")]
+#[get("/api/json/{my_type}/{language_code}")]
 pub async fn json_get(
     request: HttpRequest,
 ) -> Result<actix_files::NamedFile, Error> {

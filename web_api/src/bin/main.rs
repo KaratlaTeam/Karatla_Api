@@ -24,6 +24,7 @@ async fn main() -> std::io::Result<()> {
             .data(pool.clone())
             .service(Files::new("/static", "static"))
             //.service(web::scope("/api").configure(f))
+            .service(web_rount::check_question_version)
             .service(web_rount::account_get_all)
             .service(web_rount::account_create)
             .service(web_rount::account_get)
