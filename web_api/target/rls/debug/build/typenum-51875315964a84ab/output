@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/rls/debug/build/typenum-51875315964a84ab/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/july/Documents/GitHub/KaratlaTeam/Karatla_Api/web_api/target/rls/debug/build/typenum-51875315964a84ab/out/op.rs
