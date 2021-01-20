@@ -9,7 +9,6 @@ pub fn connection_database_pool() -> r2d2::Pool<r2d2::ConnectionManager<MysqlCon
     //let database_url = env::var("DATABASE_URL")
     //    .expect("DATABASE_URL must be set");
     //println!("database_url: {}",database_url);
-
     let database_url = read_env();
 
     let manager = r2d2::ConnectionManager::<MysqlConnection>::new(database_url);
@@ -22,12 +21,13 @@ pub fn connection_database_pool() -> r2d2::Pool<r2d2::ConnectionManager<MysqlCon
 }
 
 fn read_env() -> String {
-    use std::fs::File;
-    use std::io::Read;
-
-    let mut file = File::open("static/.env").unwrap();
+    //use std::fs::File;
+    //use std::io::Read;
+    println!("Please write Mysql address:");
+    //let mut file = File::open("static/.env").unwrap();
     let mut env = String::new();
-    file.read_to_string(&mut env).unwrap();
+    std::io::stdin().read_line(&mut env).unwrap();
+    //file.read_to_string(&mut env).unwrap();
 
     println!("read env url: {}",env);
 
