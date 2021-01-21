@@ -8,7 +8,7 @@ async fn main() -> std::io::Result<()> {
     //std::env::set_var("RUST_LOG", "actix_web=info");
 
     //link is "https://192.168.0.139:443";
-    let bind = "localhost:8080";
+    let bind = "127.0.0.1:8080";
     //let bind = "0.0.0.0:443";
 
     // load ssl key
