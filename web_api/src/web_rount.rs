@@ -1,5 +1,5 @@
-use crate::database_actions_account;
-use crate::database_actions_vallidation;
+use crate::{database_actions_account,}; //models_validation};
+use crate::database_actions_validation;
 use crate::models_http;
 use crate::type_file;
 use actix_web::{client::Client, get, post, web, Error, HttpResponse, HttpRequest};
@@ -8,7 +8,7 @@ use std::path::PathBuf;
 use actix_files::NamedFile;
 use rand::prelude::*;
 use serde_json;
-use tokio::{runtime, time};
+//use tokio::{runtime, time};
 use std::fs::File;
 use std::io::Read;
 
@@ -97,6 +97,25 @@ pub async fn academy_images_get(
     
 }
 
+//get all validation
+#[get("/api/account/validation/code/get/all")]
+pub async fn validation_get_all(pool: web::Data<type_file::DbPool>) -> Result<HttpResponse, Error>{
+    let connection = pool.get().expect("Fail get connection from pool!");
+    
+    let validations = web::block(move || database_actions_validation::get_validation_all(&connection))
+        .await
+        .map_err(|e|{
+            eprintln!("{}", e);
+            HttpResponse::InternalServerError().finish()
+        })?;
+
+    if let Some(validations) = validations {
+        Ok(HttpResponse::Ok().json(validations))
+    }else{
+        let res = HttpResponse::NotFound().body(format!("Not find any data"));
+        Ok(res)
+    }
+}
 
 // get code
 #[get("/api/account/validation/code/{phone}")]
@@ -106,8 +125,7 @@ pub async fn account_validation_code(
 ) -> Result<HttpResponse, Error> {
     let mut map_data = serde_json::Map::new();
     let state_code;
-    let connection1 = pool.clone().get().expect("Fail get connection from pool!");
-    let connection2 = pool.clone().get().expect("Fail get connection from pool!");
+    let connection = pool.clone().get().expect("Fail get connection from pool!");
 
     // calculate validation code
     let mut rng = thread_rng();
@@ -147,8 +165,8 @@ pub async fn account_validation_code(
         // insert validation code
         let phone1 = phone_n.clone().to_string();
         let new_validation = web::block(move || {
-            database_actions_vallidation::insert_data_validation(
-                &connection1,
+            database_actions_validation::insert_data_validation(
+                &connection,
                 &phone1,
                 &validation_code,
             )
@@ -164,37 +182,12 @@ pub async fn account_validation_code(
             new_validation.phone_number, new_validation.phone_code
         );
 
-        // delete code after 60s
+        state_code = 1801;
+        map_data.insert(
+            "state".to_string(),
+            serde_json::Value::String("successful send ".to_string()),
+        );
 
-        let rt = runtime::Runtime::new().unwrap();
-        rt.block_on(async {
-            time::sleep(time::Duration::from_secs(60)).await;
-        });
-
-        let phone2 = phone_n.clone().to_string();
-        let delete_n = web::block(move || {
-            database_actions_vallidation::delete_data_validation(&connection2, &phone2)
-        })
-        .await
-        .map_err(|e| {
-            eprint!("{}", e);
-            HttpResponse::InternalServerError().finish()
-        });
-
-        if delete_n.unwrap().to_string().as_str() != "0" {
-            state_code = 1801;
-            map_data.insert(
-                "state".to_string(),
-                serde_json::Value::String("delete successful".to_string()),
-            );
-            println!("delete successful")
-        } else {
-            map_data.insert(
-                "state".to_string(),
-                serde_json::Value::String("delete fail".to_string()),
-            );
-            state_code = 1811;
-        }
     } else {
         state_code = 1810;
         map_data.insert(
@@ -203,6 +196,71 @@ pub async fn account_validation_code(
         );
     }
 
+    let back_data = models_http::JsonData {
+        code: state_code,
+        data: map_data,
+    };
+    Ok(HttpResponse::Ok().json(back_data))
+}
+
+// delete code
+#[post("/api/account/validation/code/delete/{phone}")]
+pub async fn account_validation_code_delete(
+    phone_n: web::Path<i64>,
+    pool: web::Data<type_file::DbPool>,
+    form: web::Json<models_http::JsonData>,
+) -> Result<HttpResponse, Error> {
+    let mut map_data = serde_json::Map::new();
+    let state_code;
+    let connection = pool.clone().get().expect("Fail get connection from pool!");
+
+    if form.code == 1850 
+    {
+        // delete code
+
+        //let rt = runtime::Runtime::new().unwrap();
+        //rt.block_on(async {
+        //    time::sleep(time::Duration::from_secs(60)).await;
+        //});
+
+        let phone2 = phone_n.clone().to_string();
+        let delete_n = web::block(move || {
+            database_actions_validation::delete_data_validation(&connection, &phone2)
+        })
+        .await
+        .map_err(|e| {
+            eprint!("{}", e);
+            HttpResponse::InternalServerError().finish()
+        }).unwrap();
+
+        if delete_n >= 1
+        {
+            state_code = 1851;
+            map_data.insert(
+                "state".to_string(),
+                serde_json::Value::String("delete successful".to_string()),
+            );
+            println!("delete successful")    
+    
+        } else 
+        {
+            state_code = 1852;
+            map_data.insert(
+                "state".to_string(),
+                serde_json::Value::String("delete fail".to_string()),
+            );
+        }
+
+    } else 
+    {
+        state_code = 1853;
+            map_data.insert(
+                "state".to_string(),
+                serde_json::Value::String("request code wrong".to_string()),
+            );
+
+    }
+    
     let back_data = models_http::JsonData {
         code: state_code,
         data: map_data,
@@ -244,7 +302,7 @@ pub async fn account_validation_code_check(
             );
         } else {
             let back = web::block(move || {
-                database_actions_vallidation::check_data_validation(
+                database_actions_validation::check_data_validation(
                     &connection,
                     &form
                         .data

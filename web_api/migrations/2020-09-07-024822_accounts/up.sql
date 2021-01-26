@@ -26,5 +26,8 @@ CREATE TABLE validations (
     id BIGINT PRIMARY KEY auto_increment ,
     phone_number VARCHAR(256) NOT NULL ,
     phone_code VARCHAR(256) NOT NULL ,
+    phone_safe_hour INTEGER UNSIGNED NOT NULL,
+    phone_safe_minute INTEGER UNSIGNED NOT NULL,
+    phone_safe_second INTEGER UNSIGNED NOT NULL,
     phone_code_get_time VARCHAR(256) NOT NULL
 );

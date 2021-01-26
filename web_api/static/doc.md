@@ -151,15 +151,29 @@ code: 1710
 
 code: 1801
 -- type: back
--- function: successful send and delete
+-- function: successful send 
 
 code: 1810
 -- type: back
 -- function: fail send validation code to service
 
-code: 1811
+
+
+##### code 1850 -> validation code delete #####
+-- type: request
+-- function: delete validation code 
+
+code: 1851
 -- type: back
--- function: fail delete validation code
+-- function: successful delete
+
+code: 1852
+-- type: back
+-- function: fail delete validation code 
+
+code: 1853
+-- type: back
+-- function: request code wrong
 
 
 
@@ -183,5 +197,6 @@ code: 1911
 code: 1912
 -- type: back
 -- function: phone already exit
+
 
 
